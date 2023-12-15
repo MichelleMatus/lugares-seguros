@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AppstoreOutlined, MailOutlined } from '@ant-design/icons';
+import { PlusOutlined, ShopOutlined } from '@ant-design/icons';
 import { Menu } from 'antd';
 import { Outlet, Link } from 'react-router-dom';
 
@@ -12,12 +12,12 @@ export const Navbar = () => {
   return (
     <>
       <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal">
-        <Menu.Item key="mail" label="Home" icon={<MailOutlined />}>
+        <Menu.Item key="mail" label="Home" icon={<ShopOutlined />}>
           <Link to="/">
             Lugares
           </Link>          
         </Menu.Item>
-        <Menu.Item key="app" label="create-place" icon={<AppstoreOutlined />}>
+        <Menu.Item key="app" label="create-place" icon={<PlusOutlined />}>
           <Link to="/place/create">
             Crear lugar
           </Link>  
